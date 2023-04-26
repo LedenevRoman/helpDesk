@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback was Provided</title>
+</head>
+<body>
+Feedback was Provided
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback was Provided</title>
+</head>
+<body>
+<h2>Dear <span th:text="${ticket.getAssignee().getFirstName()}"/> <span th:text="${ticket.getAssignee().getLastName()}"/>,</h2>
+<h2>
+    The feedback was provided on the <a href="details.html"
+                                        th:href="@{http://localhost:3000/ticket-info/{ticket}(ticket=${ticket.getId()})}">
+        Ticket-<span th:text="${ticket.getId()}"/></a>
+</h2>
+</body>
+</html>
