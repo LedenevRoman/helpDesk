@@ -60,7 +60,8 @@
 
 ### myfakemail322@gmail.com
 
-### Password: qwer_1234
+### Email Password: qwer_1234
+### Application Password: rhhbyllmulsvyydg
 
 **____________________________________**
 
